@@ -1,0 +1,106 @@
+{
+    "type": "Scaffold",
+    "appBar": {
+      "type": "AppBar",
+      "title": {
+        "type": "Text",
+        "data": "Управление пользователями"
+      },
+      "actions": [
+        {
+          "type": "IconButton",
+          "icon": {
+            "type": "Icon",
+            "data": "settings"
+          },
+          "onPressed": "_changeSettings"
+        }
+      ]
+    },
+    "body": {
+      "type": "Container",
+      "child": {
+        "type": "Column",
+        "children": [
+          {
+            "type": "Padding",
+            "padding": {
+              "type": "EdgeInsets",
+              "all": 8.0
+            },
+            "child": {
+              "type": "TextField",
+              "controller": "_nameController",
+              "decoration": {
+                "type": "InputDecoration",
+                "labelText": "Имя"
+              }
+            }
+          },
+          {
+            "type": "Padding",
+            "padding": {
+              "type": "EdgeInsets",
+              "all": 8.0
+            },
+            "child": {
+              "type": "TextField",
+              "controller": "_emailController",
+              "decoration": {
+                "type": "InputDecoration",
+                "labelText": "Email"
+              }
+            }
+          },
+          {
+            "type": "ElevatedButton",
+            "onPressed": "_addUser",
+            "child": {
+              "type": "Text",
+              "data": "Добавить пользователя"
+            }
+          },
+          {
+            "type": "Expanded",
+            "child": {
+              "type": "ListView.builder",
+              "itemCount": "_users.length",
+              "itemBuilder": {
+                "type": "ListTile",
+                "title": {
+                  "type": "Text",
+                  "data": "user.name"
+                },
+                "subtitle": {
+                  "type": "Text",
+                  "data": "user.email"
+                },
+                "trailing": {
+                  "type": "Row",
+                  "mainAxisSize": "MainAxisSize.min",
+                  "children": [
+                    {
+                      "type": "IconButton",
+                      "icon": {
+                        "type": "Icon",
+                        "data": "edit"
+                      },
+                      "onPressed": "_editUser(user)"
+                    },
+                    {
+                      "type": "IconButton",
+                      "icon": {
+                        "type": "Icon",
+                        "data": "delete"
+                      },
+                      "onPressed": "_deleteUser(user.id)"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
