@@ -23,7 +23,6 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
       _nameController.clear();
       _emailController.clear();
     } else {
-      // Вы можете добавить сообщение об ошибке, если поля пустые
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Please enter both name and email')),
       );
