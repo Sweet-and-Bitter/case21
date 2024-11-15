@@ -24,8 +24,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   mirai: ^0.7.0
-  path_provider: ^2.0.10
-  shared_preferences: ^2.0.6
+  flutter_bloc: ^8.0.0
 
 dev_dependencies:
   flutter_test:
@@ -54,3 +53,5 @@ flutter:
     - assets/
     - assets/screen.json
     - assets/settings.json
+    - assets/background.png
+    - assets/login_ico.png

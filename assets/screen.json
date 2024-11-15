@@ -1,106 +1,170 @@
 {
-    "type": "Scaffold",
-    "appBar": {
-      "type": "AppBar",
-      "title": {
-        "type": "Text",
-        "data": "Управление пользователями"
-      },
-      "actions": [
+  "type": "scaffold",
+  "backgroundImage": "assets/background.png",
+  "appBar": {
+    "type": "appBar",
+    "title": {
+      "type": "text",
+      "data": "Мебельный магазин",
+      "style": {
+        "color": "#ffffff",
+        "fontSize": 30
+      }
+    },
+    "backgroundColor": "#571085"
+  },
+  "body": {
+    "type": "singleChildScrollView",
+    "child": {
+      "type": "column",
+      "children": [
         {
-          "type": "IconButton",
-          "icon": {
-            "type": "Icon",
-            "data": "settings"
-          },
-          "onPressed": "_changeSettings"
+          "type": "sizedBox",
+          "height": 16
+        },
+        {
+          "type": "text",
+          "data": "Диваны",
+          "style": {
+            "fontSize": 24,
+            "fontWeight": "w300",
+            "color": "#000000"
+          }
+        },
+        {
+          "type": "sizedBox",
+          "height": 16
+        },
+        {
+          "type": "listView",
+          "shrinkWrap": true,
+          "children": [
+            {
+              "type": "card",
+              "child": {
+                "type": "column",
+                "children": [
+                  {
+                    "type": "image",
+                    "src": "https://cdn0.divan.ru/img/v1/fYaZSjqMLdfKlNx1Ocgw0Ba3rVp3iAPCsjS2h7XW7V0/t:0::0:0/pd:60:60:60:60/rs:fit:1148:720:0:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzUyMzcwNDAucG5n.jpg",
+                    "height": 150,
+                    "fit": "cover"
+                  },
+                  {
+                    "type": "text",
+                    "data": "Диван серый",
+                    "style": {
+                      "fontSize": 18,
+                      "fontWeight": "w300",
+                      "color": "#000000"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "data": "1900 рублей",
+                    "style": {
+                      "fontSize": 16,
+                      "color": "#1f0307"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "card",
+              "child": {
+                "type": "column",
+                "children": [
+                  {
+                    "type": "image",
+                    "src": "https://cdn0.divan.ru/img/v1/cMdUwZXDH_xSqYlR8RL4mW9YstNJ41--QmZDrcHnQ44/t:0::0:0/pd:60:60:60:60/rs:fit:1148:720:0:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzUwOTE0NzIucG5n.jpg",
+                    "height": 150,
+                    "fit": "cover"
+                  },
+                  {
+                    "type": "text",
+                    "data": "Диван серый",
+                    "style": {
+                      "fontSize": 18,
+                      "fontWeight": "w300",
+                      "color": "#000000"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "data": "2999 рублей",
+                    "style": {
+                      "fontSize": 16,
+                      "color": "#1f0307"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "card",
+              "child": {
+                "type": "column",
+                "children": [
+                  {
+                    "type": "image",
+                    "src": "https://cdn0.divan.ru/img/v1/Ot-rZViZdbj58mDsNwGhpMf7NNowgzrfeH8Bazve_ZA/t:0::0:0/pd:60:60:60:60/rs:fit:1148:720:0:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzQ1MzE3ODUucG5n.jpg",
+                    "height": 150
+                  },
+                  {
+                    "type": "text",
+                    "data": "Диван тёмно-зелёный",
+                    "style": {
+                      "fontSize": 18,
+                      "fontWeight": "w300",
+                      "color": "#000000"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "data": "3999 рублей",
+                    "style": {
+                      "fontSize": 16,
+                      "color": "#1f0307"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "card",
+              "child": {
+                "type": "column",
+                "children": [
+                  {
+                    "type": "image",
+                    "src": "https://cdn0.divan.ru/img/v1/KC74uzLInLnCst9tizeKrdICuDuwqkCO3WJtouQD6pw/t:0::0:0/pd:60:60:60:60/rs:fit:1148:720:0:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzQzNjM1NTUucG5n.jpg",
+                    "height": 150,
+                    "fit": "cover"
+                  },
+                  {
+                    "type": "text",
+                    "data": "Диван зелёный",
+                    "style": {
+                      "fontSize": 18,
+                      "fontWeight": "w300",
+                      "color": "#000000"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "data": "6000 рублей",
+                    "style": {
+                      "fontSize": 16,
+                      "color": "#1f0307"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         }
       ]
-    },
-    "body": {
-      "type": "Container",
-      "child": {
-        "type": "Column",
-        "children": [
-          {
-            "type": "Padding",
-            "padding": {
-              "type": "EdgeInsets",
-              "all": 8.0
-            },
-            "child": {
-              "type": "TextField",
-              "controller": "_nameController",
-              "decoration": {
-                "type": "InputDecoration",
-                "labelText": "Имя"
-              }
-            }
-          },
-          {
-            "type": "Padding",
-            "padding": {
-              "type": "EdgeInsets",
-              "all": 8.0
-            },
-            "child": {
-              "type": "TextField",
-              "controller": "_emailController",
-              "decoration": {
-                "type": "InputDecoration",
-                "labelText": "Email"
-              }
-            }
-          },
-          {
-            "type": "ElevatedButton",
-            "onPressed": "_addUser",
-            "child": {
-              "type": "Text",
-              "data": "Добавить пользователя"
-            }
-          },
-          {
-            "type": "Expanded",
-            "child": {
-              "type": "ListView.builder",
-              "itemCount": "_users.length",
-              "itemBuilder": {
-                "type": "ListTile",
-                "title": {
-                  "type": "Text",
-                  "data": "user.name"
-                },
-                "subtitle": {
-                  "type": "Text",
-                  "data": "user.email"
-                },
-                "trailing": {
-                  "type": "Row",
-                  "mainAxisSize": "MainAxisSize.min",
-                  "children": [
-                    {
-                      "type": "IconButton",
-                      "icon": {
-                        "type": "Icon",
-                        "data": "edit"
-                      },
-                      "onPressed": "_editUser(user)"
-                    },
-                    {
-                      "type": "IconButton",
-                      "icon": {
-                        "type": "Icon",
-                        "data": "delete"
-                      },
-                      "onPressed": "_deleteUser(user.id)"
-                    }
-                  ]
-                }
-              }
-            }
-          }
-        ]
-      }
     }
   }
+}
